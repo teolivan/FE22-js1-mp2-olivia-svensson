@@ -1,0 +1,57 @@
+#paper, #rock, #scissors {
+    width: 100px;
+    height: auto;
+    transition: 100ms;
+    cursor: pointer;
+    
+}
+
+#paper:hover , #rock:hover, #scissors:hover{
+    transform: scale(1.4)
+}
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3em;
+    padding-top: 50px;
+}
+
+body {
+    background-color: lightpink;
+}
+
+#choiceDisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+button {
+    outline-color: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: 5px;
+    padding: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+input {
+    border-radius: 10px;
+    padding: 2px;
+    outline-color: none;
+    border: 2px solid white;
+    height: 1.4em;
+}

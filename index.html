@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <h1>Rock Paper Scissors</h1>
+    <label id="label">Enter your name:<input type="text"></label><button type="submit">Submit</button>
 
+    </header>
+<div id="choices">
+    <div id="choice"><img src="rock.png" alt="" id="rock"></div>
+    <div id="choice"><img src="paper.png" alt="" id="paper"></div>
+    <div id="choice"><img src="scissors.png" alt="" id="scissors"></div>
+   
+</div>
 
-    
+<div id="choiceDisplay">
+<div id="yourChoice">
+    <h1>Your Choice: </h1>
+    <h2>0</h2>
+</div>
+<div id="computerChoice">
+    <h1>Computer Choice: </h1>
+    <h2>0</h2>
+</div>
+</div>
+
     <script src="script.js"></script>
 </body>
 </html>
