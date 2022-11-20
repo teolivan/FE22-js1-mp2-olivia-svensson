@@ -17,6 +17,11 @@ rockBtn.innerHTML = choices[0];
 paperBtn.innerHTML = choices[1]; 
 scissorsBtn.innerHTML = choices[2]; 
 
+const generateComputerChoice = () => {
+    const randomChoice = choices[Math.floor(Math.random() * choices.length)]
+    document.getElementById("computerScore").innerText(randomChoice)
+}
+
 const handleClick = (handleClickEvt) => {
     console.log(handleClickEvt.target.id)
 }
@@ -26,9 +31,11 @@ rockBtn.addEventListener("click", handleClick)
 paperBtn.addEventListener("click", handleClick)
 scissorsBtn.addEventListener("click", handleClick)
  
-//game 
-const gameGame (player, computer) => {
-
+//game rules
+const gameGame = (player, computer) => {
+if (player === rock && computer === rock) {
+    document.getElementById("result").innerHTML("<h1>it's a tie!</h1>");
+}
 }
 
 
