@@ -10,7 +10,7 @@
 <body>
 <header>
     <h1>Rock Paper Scissors</h1>
-    <label id="label">Enter your name:<input type="text" id="userName" name="userName"></label><button type="submit" onclick="showName()" value="submit">Submit</button>
+    <label id="label">Enter your name:<input type="text" id="userName" name="userName"></label><button type="submit" onclick="showName()" value="submit">Start Game</button>
 
     </header>
 <div id="choices">
@@ -22,15 +22,22 @@
 
 <div id="choiceDisplay">
 <div id="yourChoice">
-    <h1><span id="namename"></span> choice: </h1>
-    <h2 id="yourscore">0</h2>
+    <h1 id="playerWeapon"><span id="namename">Player chose: </span></h1>
+    <h2 id="playerscore">0</h2>
 </div>
 <div id="computerChoice">
-    <h1>Computer's choice: </h1>
+    <h1><span id="computerWeapon">Computer chose: </span></h1>
     <h2 id="computerscore">0</h2>
+</ul>
 </div>
 </div>
-<div class="result"></div>
+<div class="result">
+    <h1 id="playerresult"></h1>
+    <h1 id="computerresult"></h1>
+</div>
+<div>
+    <h1 id="endresult"></h1>
+</div>
 <button class="reload"></button>
 
     <script src="script.js"></script>
